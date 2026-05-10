@@ -1,0 +1,11 @@
+
+  # Premium Physiotherapy Equipment Website
+
+  This is a code bundle for Premium Physiotherapy Equipment Website. The original project is available at https://www.figma.com/design/t49D6NfJASquQTKLtxjvZa/Premium-Physiotherapy-Equipment-Website.
+
+  ## Running the code
+
+  Run `npm i` to install the dependencies.
+
+  Run `npm run dev` to start the development server.
+  
