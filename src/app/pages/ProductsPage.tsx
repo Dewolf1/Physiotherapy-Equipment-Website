@@ -41,7 +41,7 @@ export default function ProductsPage() {
             </div>
 
             {/* Mobile: single-row horizontal scroll | Desktop: full-width flex-wrap */}
-            <div className="flex flex-wrap gap-2 items-center">
+            <div className="flex flex-nowrap md:flex-wrap overflow-x-auto md:overflow-x-visible hide-scrollbar gap-2 items-center pb-1 md:pb-0">
               <Filter size={16} className="text-gray-400 hidden md:block flex-shrink-0 mr-1" />
               {categories.map(category => (
                 <button
