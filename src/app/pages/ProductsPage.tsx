@@ -27,7 +27,7 @@ export default function ProductsPage() {
         </div>
 
         <div className="sticky top-[80px] md:top-[88px] z-40 bg-gray-50/95 backdrop-blur-xl py-4 -mx-4 px-4 sm:mx-0 sm:px-0 border-b border-gray-200/80 mb-8 transition-all shadow-sm">
-          <div className="flex flex-col md:flex-row gap-4 md:gap-6 items-center">
+          <div className="flex flex-col md:flex-row md:items-start gap-4 md:gap-6">
             <div className="relative w-full md:max-w-md shrink-0">
               <Search className="absolute left-4 top-1/2 -translate-y-1/2 text-gray-400" size={20} />
               <input
@@ -39,8 +39,9 @@ export default function ProductsPage() {
               />
             </div>
             
-            <div className="flex-grow w-full overflow-x-auto hide-scrollbar flex gap-2 items-center pb-2 md:pb-0">
-              <Filter size={18} className="text-gray-400 hidden md:block flex-shrink-0 ml-2 mr-2" />
+            {/* Mobile: horizontal scroll | Desktop: wrap all rows */}
+            <div className="flex-grow w-full overflow-x-auto md:overflow-x-visible hide-scrollbar flex md:flex-wrap gap-2 items-center pb-2 md:pb-0">
+              <Filter size={18} className="text-gray-400 hidden md:block flex-shrink-0 mr-1" />
               {categories.map(category => (
                 <button
                   key={category}
