@@ -51,10 +51,15 @@ export function Header() {
         </div>
       </div>
 
-      <div className="max-w-7xl mx-auto px-4 py-3">
-        <div className="flex justify-between items-center">
-          <Link to="/" className="flex items-center gap-3 group shrink-0">
-            <HospimedicoLogo className="w-24 md:w-32 h-auto" isDark={!shouldHaveDarkText} />
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 py-2 sm:py-3">
+        <div className="flex justify-between items-center gap-3">
+          <Link
+            to="/"
+            className="flex items-center group shrink-0"
+            style={{ minWidth: 0 }}
+            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+          >
+            <HospimedicoLogo className="w-56 sm:w-64 md:w-72 h-auto" isDark={!shouldHaveDarkText} />
           </Link>
 
           {/* Desktop Nav */}

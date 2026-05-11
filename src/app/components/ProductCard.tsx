@@ -27,9 +27,10 @@ export function ProductCard({
     <motion.div
       initial={{ opacity: 0, y: 20 }}
       whileInView={{ opacity: 1, y: 0 }}
-      viewport={{ once: true }}
-      whileHover={{ y: -10 }}
-      className="group relative bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:shadow-royal-600/10 transition-all duration-500"
+      viewport={{ once: true, amount: 0.1, margin: '0px 0px -50px 0px' }}
+      transition={{ duration: 0.4, ease: 'easeOut' }}
+      whileHover={{ y: -8 }}
+      className="group relative bg-white rounded-[2rem] overflow-hidden border border-gray-100 shadow-xl shadow-gray-200/50 hover:shadow-2xl hover:shadow-royal-600/10 transition-shadow duration-500 will-change-transform"
     >
       <Link to={`/products/${id}`} className="block">
         <div className="relative aspect-[4/3] overflow-hidden">

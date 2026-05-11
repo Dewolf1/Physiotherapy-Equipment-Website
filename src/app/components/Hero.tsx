@@ -40,7 +40,7 @@ export function Hero() {
             </h1>
 
             <p className="text-lg text-gray-400 mb-10 max-w-lg leading-relaxed">
-              Hospimedico — Delhi-based manufacturers, importers &amp; exporters of high-quality physiotherapy, occupational therapy, and rehabilitation equipment trusted by hospitals, clinics, and rehab centers worldwide.
+              Hospimedico — Delhi-based manufacturers, importers &amp; exporters of high-quality Equipments
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4">
